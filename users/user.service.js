@@ -60,7 +60,7 @@ async function _delete(id) {
 // helper functions
 
 async function getUser(id) {
-    const user = await db.user.findByPk(id);
+    const user = await db.User.findByPk(id);
     if (!user) throw 'User not found';
     return user;
 }
